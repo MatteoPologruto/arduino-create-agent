@@ -172,6 +172,7 @@ jobs:
         with:
           repository: "bcmi-labs/arduino-create-agent-installer" # the repo which contains the bundle structure and icons
           token: ${{ secrets.ARDUINO_CREATE_AGENT_CI_PAT }}
+          ref: rename-to-cloud-agent
 
       - name: Download artifact
         uses: actions/download-artifact@v4
@@ -403,6 +404,7 @@ jobs:
         with:
           repository: "bcmi-labs/arduino-create-agent-installer" # the repo which contains install.xml
           token: ${{ secrets.ARDUINO_CREATE_AGENT_CI_PAT }}
+          ref: rename-to-cloud-agent
 
       - name: Download artifact
         uses: actions/download-artifact@v4
@@ -496,6 +498,7 @@ jobs:
         with:
           repository: "bcmi-labs/arduino-create-agent-installer" # the repo which contains the icons/background
           token: ${{ secrets.ARDUINO_CREATE_AGENT_CI_PAT }}
+          ref: rename-to-cloud-agent
 
       - name: Download artifact
         uses: actions/download-artifact@v4
